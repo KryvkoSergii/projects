@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="468dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_width="180dp"
+                    android:height="100dp"
+                    android:baselineAligned="false"
+                    android:maxWidth="170dp"
+                    android:onClick="onBtn11Click"
+                    android:text="@string/answer" />
+
+                <Button
+                    android:id="@+id/btn12"
+                    android:layout_width="192dp"
+                    android:layout_height="match_parent"
+                    android:height="100dp"
+                    android:maxWidth="170dp"
+                    android:onClick="onBtn12Click"
+                    android:text="@string/answer" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="95dp">
+
+                <Button
+                    android:id="@+id/btn21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="101dp"
+                    android:height="100dp"
+                    android:maxWidth="170dp"
+                    android:onClick="onBtn21Click"
+                    android:text="@string/answer" />
+
+                <Button
+                    android:id="@+id/btn22"
+                    android:layout_width="179dp"
+                    android:layout_height="101dp"
+                    android:height="100dp"
+                    android:maxWidth="170dp"
+                    android:onClick="onBtn22Click"
+                    android:text="@string/answer" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:height="100dp"
+                    android:maxWidth="170dp"
+                    android:onClick="onBtn31Click"
+                    android:text="@string/answer" />
+
+                <Button
+                    android:id="@+id/btn32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:height="100dp"
+                    android:maxWidth="170dp"
+                    android:onClick="onBtn32Click"
+                    android:text="@string/answer" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:onClick="onBtnNextClick"
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next >>" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="Attempt/correct - " />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
